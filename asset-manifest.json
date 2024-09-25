@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.4773cb33.css",
-    "main.js": "/static/js/main.711f8553.js",
-    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/index.html",
-    "main.4773cb33.css.map": "/static/css/main.4773cb33.css.map",
-    "main.711f8553.js.map": "/static/js/main.711f8553.js.map",
-    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/TechHome-Website/static/css/main.4773cb33.css",
+    "main.js": "/TechHome-Website/static/js/main.5eadec72.js",
+    "static/js/453.ed3810f9.chunk.js": "/TechHome-Website/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/TechHome-Website/index.html",
+    "main.4773cb33.css.map": "/TechHome-Website/static/css/main.4773cb33.css.map",
+    "main.5eadec72.js.map": "/TechHome-Website/static/js/main.5eadec72.js.map",
+    "453.ed3810f9.chunk.js.map": "/TechHome-Website/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4773cb33.css",
-    "static/js/main.711f8553.js"
+    "static/js/main.5eadec72.js"
   ]
 }
