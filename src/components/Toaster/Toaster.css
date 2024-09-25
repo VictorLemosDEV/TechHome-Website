@@ -1,0 +1,79 @@
+.toast {
+    width: 30rem;
+    height: 7.5rem;
+
+    margin: 0rem -10rem;
+
+    display: grid;
+
+}
+
+.toast .title {
+    margin-right: 50%;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+
+
+.cancel {
+    position: absolute;
+    width: 5rem;
+    height: 3rem;
+
+    color: black;
+    background-color: white;
+
+    margin-left: 16rem;
+    margin-top: 2rem;
+
+}
+
+.toast .description {
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+
+    color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .toast .title {
+        width: 100%;
+        margin-top: 2.75rem;
+        margin-left: 2rem;
+        font-size: 1rem;
+
+        color: white;
+
+    }
+
+    .toast {
+        bottom: 100%;
+        width: 30rem;
+        height: 7.5rem;
+    
+        margin: 0rem 0rem;
+    
+        display: flex;
+
+
+    
+    }
+
+    .toast .cancel {
+
+        width: 6rem;
+        height: 2.5rem;
+    
+        color: black;
+        background-color: white;
+        
+    
+    
+    }
+
+
+}

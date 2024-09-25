@@ -1,0 +1,117 @@
+.Card-Container {
+    max-width: 20rem;
+    height: 20rem;
+
+    transition: all ease 200ms;
+
+    margin-bottom: 5rem;
+}
+
+.Card-Container.active .card-header, .Card-Container.hide .card-header {
+    display: grid;
+
+    grid-template-columns: 2rem 90%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "dropdown title"
+                         "drodpwn description";
+}
+
+.Card-Container .title {
+    font-size: 1.5rem;
+
+    grid-area: title;
+
+    margin-bottom: 10rem;
+}
+
+.Card-Container .description {
+    grid-area: description;
+}
+
+.Card-Container .dropdown-button {
+    display: none;
+}
+
+.Card-Container .add-action-button {
+    display: flex;
+
+    font-size: 16px;
+
+    width: 5rem;
+    height: 5rem;
+
+    margin: auto;
+    border-radius: 50%;
+
+    background-color: #6649b8;
+    
+
+}
+
+.Card-Container .add-action-button:hover {
+    background-color: #3a276d;;
+}
+
+.add-action-button .icon {
+    font-size: 3rem;
+
+    display: flex;
+
+    margin: auto;
+}
+
+
+
+.Card-Container .card-content {
+    display: none;
+}
+
+.Card-Container .card-footer {
+    display: none;
+}
+
+
+.Card-Container.active {
+    max-width: 42rem;
+    height: auto;
+
+    transition: all ease 200ms;
+}
+
+
+
+.Card-Container.active.hide .card-content {
+    display: none;
+}
+
+.Card-Container.active.hide .card-footer {
+    display: none;
+}
+
+
+
+.Card-Container.active .add-action-button {
+    display: none;
+}
+
+.Card-Container.active .dropdown-button {
+    display: block;
+}
+
+.Card-Container.active .card-content {
+    display: block;
+}
+
+.Card-Container.active .card-footer {
+    display: block;
+}
+
+.dropdown-button {
+    transform: rotate(0deg);
+
+    transition: all ease 200ms;
+}
+
+.dropdown-button.open {
+    transform: rotate(-90deg);
+}

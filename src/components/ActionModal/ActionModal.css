@@ -1,0 +1,306 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+
+    --text-primary: #b6b6b6;
+    --text-secondary: #e6e6e6;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --bg-terciary: #1a1a22;
+
+    --special-color: #6649b8;
+
+
+    --transition-speed: 600ms;
+
+
+}
+
+body {
+
+
+    overflow-x: hidden;
+}
+
+
+.action-modal {
+
+    width: 20rem;
+    height: 20rem;
+
+    margin: auto;
+    margin-top: 4rem;
+
+    display: grid;
+    grid-template-columns:  1.3rem 18.7rem;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "dropdown title" 
+                         "content content";
+
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    
+
+    background-color: #16161b;
+
+    border-radius: 2em;
+
+    transition: 200ms ease;
+
+    
+}
+
+.action-modal.active {
+    grid-template-columns: 7.5rem 27.5rem;
+
+    width: 35rem;
+    height: 30rem;
+    
+}
+
+.action-modal .title-section {
+
+
+    grid-area: title;
+
+
+
+    margin-top: 1rem;
+
+    transition: 200ms ease;
+
+
+}
+
+.action-modal .modal-title {
+
+    width: 300px;
+
+    font-size: 1.5rem;
+
+    text-align: center;
+    word-break:keep-all;
+}
+
+.action-modal .add-action-button {
+
+    grid-area: content;
+
+    
+
+    width: 5rem;
+    height: 5rem;
+
+
+    background-color: var(--special-color);
+
+    margin: 0;
+    margin-left: 7.5rem;
+    margin-top: 2rem;
+    
+    border-radius: 50%;
+
+
+
+    transition: all 200ms ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.action-modal .add-action-button .icon {
+    font-size: 3rem;
+
+    display: flex;
+
+    margin: auto;
+}
+
+.action-modal .content {
+
+    display: none;
+}
+
+.content {
+
+
+    
+    grid-area: content;
+
+
+    margin-left: 10rem;
+    max-width:15rem;
+    width: 15rem;
+
+}
+
+
+
+
+
+
+.action-modal .add-action-button.transition {
+    width: 0rem;
+    height: 0rem;
+
+
+    opacity: 0;
+
+    
+
+}
+
+.action-modal .add-action-button.transition .icon {
+    font-size: 0px;
+
+}
+
+
+
+.action-modal.hide {
+
+    height: 6rem;
+
+    grid-template-rows: 8rem 0rem;
+
+
+
+}
+
+.action-modal.hide .title-section {
+    margin-top: 3rem;
+}
+
+.action-modal.hide .dropdown {
+    margin-top: 3rem;
+}
+
+.action-modal.hide .content * {
+    display: none;
+}
+
+.action-modal.active .content {
+    display: inline-flex;
+
+    margin-top: 0rem;
+
+
+    justify-content: center;
+    align-content: center;
+
+    text-align: center;
+}
+
+.separator {
+
+    margin-bottom: 3rem;
+
+    transform:rotate(90deg);
+}
+
+.action-modal .dropdown, .action-modal .dropdown-button {
+    display: none;
+    transition: 200ms ease;
+}
+
+
+
+.action-modal.active .dropdown {
+    display: flex;
+
+    margin-bottom: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.action-modal.active .dropdown-button {
+    grid-area: dropdown;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+
+    margin-left: 2.5rem;
+
+    margin-top: 1.5rem;
+
+    transform: rotate(-90deg);
+    
+}
+
+.action-modal.active.hide .dropdown-button {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+
+    margin-right: 25rem;
+    margin-top: 1.5rem;
+
+    transform: rotate(0deg);
+    
+}
+
+.options {
+    
+    position: absolute;
+
+    height: 2rem;
+
+    display: flex;
+
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+
+    float: left;
+
+    margin-top: -4rem;
+
+
+}
+
+
+
+.content .text {
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 15rem;
+
+    margin-top: 1rem;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .action-modal {
+        max-width: 25rem;
+        max-height: 50000px;
+    }
+
+    .action-modal.active .dropdown-button {
+        margin-left: 6rem;
+        margin-top: 0.6rem;
+    }
+
+    .action-modal.hide .dropdown {
+        margin-top: 2.7rem;
+    }
+
+    .action-modal .modal-title {
+
+        font-size: 1rem;
+
+    }
+
+}
